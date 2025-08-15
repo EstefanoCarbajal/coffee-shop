@@ -211,7 +211,6 @@ p{
 
 .croissant-right {
     width: 50%;
-    /* Elimina el clip-path */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,7 +237,6 @@ p{
     margin: 0;
     color: #6d4c2c;
     text-align: center;
-    font-family: 'Great Vibes', cursive;
 }
 
 
