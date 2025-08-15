@@ -191,7 +191,7 @@ p{
     overflow: hidden;
     background-color: rgb(201 176 152);
 }
-.croissant-left, .croissant-rigth {
+.croissant-left, .croissant-right {
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -209,7 +209,7 @@ p{
     object-fit: cover;
 }
 
-.croissant-rigth {
+.croissant-right {
     width: 50%;
     clip-path: ellipse(100% 90% at 0% 50%);
 }
