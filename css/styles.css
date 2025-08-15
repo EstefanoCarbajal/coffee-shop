@@ -1,0 +1,300 @@
+/* global styles */
+body{
+    background-color: wheat;
+    font-family: 'Cinzel Decorative', 'Trebuchet MS', serif;
+    margin: 0;
+}
+h2{
+    font-family: 'Abril Fatface';
+}
+p{
+    font-family: 'Great Vibes';
+}
+
+/* Header styles */
+.header {
+    background-color: rgb(75, 41, 9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.nav-structure {
+    
+    justify-content: center;
+    width: 100%;
+}
+.nav-list {
+    width: 100%;
+}
+.nav-list,  .nav-list a {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    display: inline;
+}
+.nav-list li{
+    display: inline;
+    margin:3%
+}
+.nav-list li h1{
+    display: inline;
+}
+.nav-list li a{
+    color: wheat;
+}
+.nav-list li a:hover {
+    color: wheat;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Inicio styles */
+/* Inicio fondo */
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    max-height: 750px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+.inicio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/fondo-cafe.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4.5px);
+    z-index: 0;
+}
+.inicio > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Inicio capas */
+.inicio-container {
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    overflow: hidden;
+    
+}
+.inicio-portafolio {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    align-items: center;    /* Centra verticalmente */
+    text-align: center;
+    display: flex;
+    color: white;
+    padding: 20px 20px;
+}
+.inicio-portafolio img {
+    width: 60%;
+    height: 500px; 
+    font-size: 36px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+.inicio-taza{
+    width: 50%;
+    height: 500px;
+}
+.inicio-taza img {
+    max-width: 100%;
+    height: 500px; /* Asegura que la imagen ocupe todo el alto */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+/* Carrusel styles */
+.cafe-tipos {
+    text-align: center;
+}
+.cafe-tipos h2 {
+    color: rgb(75, 41, 9);
+    font-family: 'Cinzel Decorative';
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 3%;
+}
+.cafe-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 60px 0;
+}
+.cafe-card {
+    width: 500px;
+    height: auto;
+    background: transparent; /* invisible */
+    justify-content: center;
+    border-radius: 16px;
+    /* Puedes agregar border: 1px dashed #ccc; para ver los cuadros mientras diseñas */
+}
+.cafe-card img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0; /* Bordes redondeados en la parte superior */
+}
+.cafe-card li {
+    list-style: disc;
+    padding: 0;
+    font-weight: 100;
+    font-size: 16px;
+    color: #4B2E2B;
+    font-family: 'Great Vibes', serif;
+    margin-left: 5px;
+}
+.cafe-card ul {
+    padding: 0 0 20px 0;
+    margin: auto;
+    width: 70%;
+    
+}
+.americano, .capuchino, .expresso {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 16px; /* Bordes redondeados en la parte inferior */
+    background-color: rgb(224, 201, 170);
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+}
+.des-cafe {
+    font-size: 19px;
+    color: #4B2E2B;
+    margin: 0 0 30px 0;
+}
+.expresso ul {
+    margin-bottom: 20px;
+}
+
+/* About styles */
+.croissant{
+    margin-top: 100px;
+}
+
+
+.croissant-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(201 176 152);
+}
+.croissant-left, .croissant-rigth {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+.croissant-left {
+    width: 50%;
+    background-color: #e0c9aa;
+    clip-path: ellipse(100% 90% at 0% 50%);
+    
+}
+.croissant-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.croissant-rigth {
+    width: 50%;
+    clip-path: ellipse(100% 90% at 0% 50%);
+}
+.cold-drink{
+    display: flex;
+    justify-content: center;
+    
+}
+.cold-drink-container { 
+width: 60%;
+height: 700px;
+padding: 30px;
+margin: 70px auto;
+}
+.cold-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(225 194 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    flex-direction: column;
+    text-align: center;
+}
+.cold-content img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.cold-content h2 {
+    margin-bottom: 30px; 
+    font-family: 'Cinzel Decorative';
+    color: rgb(75, 41, 9);
+    text-decoration: underline;
+}
+
+/* Footer styles */
+.footer-cafe {
+    width: 100%;
+    background-color: rgb(75, 41, 9);
+    color: wheat;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    font-family: 'Cinzel Decorative', 'Trebuchet MS', serif;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #e0c9aa;
+    box-shadow: 0 2px 8px rgba(75,41,9,0.15);
+    margin-bottom: 10px;
+}
+
+.footer-info h3 {
+    font-family: 'Abril Fatface', serif;
+    margin: 0 0 10px 0;
+    color: #e0c9aa;
+    font-size: 28px;
+}
+
+.footer-info p {
+    margin: 4px 0;
+    font-size: 16px;
+    color: wheat;
+}
+
+.footer-info a {
+    color: #e0c9aa;
+    text-decoration: none;
+    margin: 0 6px;
+    transition: text-decoration 0.2s;
+}
+.footer-info a:hover {
+    text-decoration: underline;
+}
